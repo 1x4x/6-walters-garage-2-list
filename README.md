@@ -1,4 +1,4 @@
-# Walters Garage 2 :car:
+# Walters Garage 2 :blue_car: :car:
 
 En konsolapplikation i C# för att hantera ett garage med en `List<Vehicle>`. Programmet
 låter användaren parkera, söka efter och hämta ut fordon samt följa garagets kapacitet.
