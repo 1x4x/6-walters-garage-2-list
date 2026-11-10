@@ -1,15 +1,15 @@
-# Walters Garage 2
+# :car: Walters Garage 2
 
-En konsolapplikation i C# för att hantera ett garage med en `List<Vehicle>`. Programmet
-låter användaren parkera, söka efter och hämta ut fordon samt följa garagets kapacitet.
+En konsolapplikation i C# fÃ¶r att hantera ett garage med en `List<Vehicle>`. Programmet
+lÃ¥ter anvÃ¤ndaren parkera, sÃ¶ka efter och hÃ¤mta ut fordon samt fÃ¶lja garagets kapacitet.
 
 ## Funktioner
 
 - Skapa ett garage med valfri kapacitet.
-- Parkera bilar, motorcyklar, flygplan, bussar och båtar.
-- Förhindra dubbla registreringsnummer och parkering när garaget är fullt.
+- Parkera bilar, motorcyklar, flygplan, bussar och bÃ¥tar.
+- FÃ¶rhindra dubbla registreringsnummer och parkering nÃ¤r garaget Ã¤r fullt.
 - Visa alla parkerade fordon och antal fordon per typ.
-- Söka efter registreringsnummer, färg, antal hjul eller fordonstyp.
+- SÃ¶ka efter registreringsnummer, fÃ¤rg, antal hjul eller fordonstyp.
 - Fylla garaget med exempelfordon.
 - Visa total kapacitet, antal parkerade fordon och lediga platser.
 
@@ -17,38 +17,38 @@ låter användaren parkera, söka efter och hämta ut fordon samt följa garagets kap
 
 - [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
 
-## Kom igång
+## Kom igÃ¥ng
 
-Kör följande kommandon från projektets rot:
+KÃ¶r fÃ¶ljande kommandon frÃ¥n projektets rot:
 
 ```bash
 dotnet run
 ```
 
-För att bygga projektet utan att starta programmet:
+FÃ¶r att bygga projektet utan att starta programmet:
 
 ```bash
 dotnet build
 ```
 
-Vid start anger du garagets kapacitet och använder sedan menyn i konsolen. Avsluta
-programmet genom att välja `0`.
+Vid start anger du garagets kapacitet och anvÃ¤nder sedan menyn i konsolen. Avsluta
+programmet genom att vÃ¤lja `0`.
 
 ## Fordonstyper
 
-Programmet stöder följande fordon och egenskaper:
+Programmet stÃ¶der fÃ¶ljande fordon och egenskaper:
 
 | Fordon | Extra egenskaper |
 | --- | --- |
-| Bil | Bränsletyp och cylindervolym |
+| Bil | BrÃ¤nsletyp och cylindervolym |
 | Motorcykel | Motorvolym |
 | Flygplan | Antal motorer |
 | Buss | Antal sittplatser |
-| Båt | Längd i meter |
+| BÃ¥t | LÃ¤ngd i meter |
 
 ## Projektstruktur
 
-- `Program.cs` – konsolmeny och användarflöde.
-- `Garage.cs` – lagring, parkering, borttagning och sökning av fordon.
-- `Vehicle.cs` – gemensam basklass för fordon.
-- `Car.cs`, `Motorcycle.cs`, `Airplane.cs`, `Bus.cs` och `Boat.cs` – specifika fordonstyper.
+- `Program.cs` â€“ konsolmeny och anvÃ¤ndarflÃ¶de.
+- `Garage.cs` â€“ lagring, parkering, borttagning och sÃ¶kning av fordon.
+- `Vehicle.cs` â€“ gemensam basklass fÃ¶r fordon.
+- `Car.cs`, `Motorcycle.cs`, `Airplane.cs`, `Bus.cs` och `Boat.cs` â€“ specifika fordonstyper.
