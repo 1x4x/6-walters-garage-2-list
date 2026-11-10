@@ -6,7 +6,7 @@ låter användaren parkera, söka efter och hämta ut fordon samt följa garaget
 ## Funktioner
 
 - Skapa ett garage med valfri kapacitet.
-- Parkera bilar :blue_car:, motorcyklar :motorcycle:, flygplan :airplane:, bussar :bus: och båtar :boat:.
+- Parkera :blue_car:bilar, :motorcycle:motorcyklar, :airplane:flygplan, :bus:bussar och :boat:båtar.
 - Förhindra dubbla registreringsnummer och parkering när garaget är fullt.
 - Visa alla parkerade fordon och antal fordon per typ.
 - Söka efter registreringsnummer, färg, antal hjul eller fordonstyp.
