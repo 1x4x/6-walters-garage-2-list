@@ -1,54 +1,95 @@
-# Walters Garage 2 :blue_car: :car:
+# 🚗 Walters Garage 2.0 🏁
 
-En konsolapplikation i C# för att hantera ett garage med en `List<Vehicle>`. Programmet
-låter användaren parkera, söka efter och hämta ut fordon samt följa garagets kapacitet.
+En C#-konsolapplikation för att hantera ett garage där alla fordon lagras i en `List<Vehicle>`. Programmet låter användaren parkera, söka efter, lista och ta ut fordon samtidigt som garagets kapacitet och lediga platser följs.
 
-## Funktioner
+## ✨ Funktioner
 
-- Skapa ett garage med valfri kapacitet.
-- Parkera :blue_car:bilar, :motorcycle:motorcyklar, :airplane:flygplan, :bus:bussar och :boat:båtar.
-- Förhindra dubbla registreringsnummer och parkering när garaget är fullt.
-- Visa alla parkerade fordon och antal fordon per typ.
-- Söka efter registreringsnummer, färg, antal hjul eller fordonstyp.
-- Fylla garaget med exempelfordon.
-- Visa total kapacitet, antal parkerade fordon och lediga platser.
+- 🚙 Parkera olika typer av fordon
+  - Bil
+  - Motorcykel
+  - Flygplan
+  - Buss
+  - Båt
+- 🅿️ Kontroll av garagets kapacitet och lediga platser
+- 🔎 Sök efter fordon via registreringsnummer, färg, hjulantal eller typ
+- 📊 Visa hur många fordon som finns av varje typ
+- ✅ Förhindra dubbla registreringsnummer och överfullt garage
+- 🧰 Fyll garaget med exempelfordon direkt från menyn
 
-## Krav
+## 🏗️ Projektstruktur
 
-- [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
+```text
+6-walters-garage-2-list/
+├── Airplane.cs
+├── Boat.cs
+├── Bus.cs
+├── Car.cs
+├── Garage.cs
+├── Garage2.csproj
+├── Motorcycle.cs
+├── Program.cs
+├── README.md
+├── Vehicle.cs
+├── walters-garage-2-list.sln
+├── .gitignore
+└── E6 - Garage 2.0 - internally uses a List to store vehicles - C# Console - Lexicon - Walter Schötz.mp4
+```
 
-## Kom igång
+## 🚘 Fordonstyper
 
-Kör följande kommandon från projektets rot:
+Programmet stöder följande fordon och specialegenskaper:
+
+| Fordon | Extra egenskaper |
+| --- | --- |
+| 🚗 Bil | Bränsletyp och cylindervolym |
+| 🏍️ Motorcykel | Motorvolym |
+| ✈️ Flygplan | Antal motorer |
+| 🚌 Buss | Antal sittplatser |
+| 🚤 Båt | Längd i meter |
+
+## ▶️ Kom igång
+
+Se till att du har .NET SDK installerat.
+
+### Kör applikationen
 
 ```bash
 dotnet run
 ```
 
-För att bygga projektet utan att starta programmet:
+### Bygg projektet
 
 ```bash
 dotnet build
 ```
 
-Vid start anger du garagets kapacitet och använder sedan menyn i konsolen. Avsluta
-programmet genom att välja `0`.
+## 🧪 Användning
 
-## Fordonstyper
+När programmet startar skapas ett garage med vald kapacitet. Därefter visas en meny med alternativ som:
 
-Programmet stöder följande fordon och egenskaper:
+- Parkera fordon
+- Hämta ut fordon
+- Visa alla parkerade fordon
+- Visa antal fordon per typ
+- Sök efter registreringsnummer
+- Sök via egenskaper
+- Visa kapacitet
+- Fyll garaget med exempelfordon
 
-| Fordon | Extra egenskaper |
-| --- | --- |
-| Bil | Bränsletyp och cylindervolym |
-| Motorcykel | Motorvolym |
-| Flygplan | Antal motorer |
-| Buss | Antal sittplatser |
-| Båt | Längd i meter |
+## 🧩 Källkod och ansvar
 
-## Projektstruktur
+- `Program.cs` – konsolmeny och användarflöde
+- `Garage.cs` – lagring, parkering, borttagning och sökning av fordon
+- `Vehicle.cs` – basklass för all typisk fordonsdata
+- `Car.cs`, `Motorcycle.cs`, `Airplane.cs`, `Bus.cs`, `Boat.cs` – specifika fordonstyper
 
-- `Program.cs` – konsolmeny och användarflöde.
-- `Garage.cs` – lagring, parkering, borttagning och sökning av fordon.
-- `Vehicle.cs` – gemensam basklass för fordon.
-- `Car.cs`, `Motorcycle.cs`, `Airplane.cs`, `Bus.cs` och `Boat.cs` – specifika fordonstyper.
+## 📌 Tekniker
+
+- C#
+- .NET
+- `List<Vehicle>` för lagring
+- Objektorienterad design
+
+## 🏁 Sammanfattning
+
+Walters Garage 2.0 är ett enkelt men ändå komplett exempel på hur ett garage kan modelleras i C# med en lista, olika fordonsklasser och användarinteraktion via konsol.
